@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — FocusPet</title>
+  <meta name="description" content="FocusPet privacy policy — what we collect and why." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <nav class="topnav">
+      <a href="index.html">← FocusPet</a>
+      <div class="lang-toggle" role="tablist" aria-label="Language">
+        <button type="button" class="active" data-lang="en" aria-selected="true">EN</button>
+        <button type="button" data-lang="tr" aria-selected="false">TR</button>
+      </div>
+    </nav>
+
+    <article>
+      <section class="lang-section" data-lang="en">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: <span class="updated-date">May 6, 2026</span></p>
+
+        <p>
+          FocusPet ("the App") is an iOS focus timer with a virtual pet garden, developed by
+          <strong>Fatih Özen</strong> (the "Developer", "we", "us"). This policy explains what data
+          the App collects, how it is used, and the choices you have. By using FocusPet you agree
+          to the practices described here.
+        </p>
+
+        <h2>1. Data we collect</h2>
+
+        <h3>1.1 Account &amp; device identifiers</h3>
+        <ul>
+          <li>
+            <strong>Anonymous user ID.</strong> The App signs you in anonymously to Firebase
+            Authentication on first launch. This ID is not linked to your name, email, or any
+            other identifier you control. It exists so your data can be backed up and restored
+            on the same device.
+          </li>
+          <li>
+            <strong>Device identifier.</strong> A random UUID generated on first launch and stored
+            in the iOS Keychain. Used to associate cloud-saved data with your installation.
+          </li>
+        </ul>
+
+        <h3>1.2 Usage data (synced to the cloud)</h3>
+        <p>The following data is stored locally on your device and mirrored to Firebase Firestore so it can be restored:</p>
+        <ul>
+          <li>Focus sessions (start time, duration, optional label, completed/cancelled state)</li>
+          <li>Pets you own and their state (species, hatch progress, garden position)</li>
+          <li>Coin balance and coin transaction history</li>
+          <li>Garden progress (active map, grid size, fog-dispelled status per map)</li>
+          <li>Aggregate counters (total focus seconds, total coins, completed session count, last active timestamp)</li>
+          <li>App version and platform string ("ios")</li>
+        </ul>
+
+        <h3>1.3 Analytics &amp; diagnostics</h3>
+        <p>
+          The App includes the Firebase Analytics SDK, which automatically collects baseline
+          usage data such as app open events, session duration, device model, OS version, and
+          a Firebase-generated installation ID. This data helps us understand stability and
+          general usage patterns. We do not use it to profile individual users.
+        </p>
+
+        <h3>1.4 Purchases</h3>
+        <p>
+          In-app purchases (coin packs and pet unlocks) are processed by Apple via StoreKit.
+          We receive a transaction confirmation from Apple, but Apple does <strong>not</strong>
+          share your payment method, billing address, or Apple ID with us. Your purchase
+          history is governed by Apple's privacy policy.
+        </p>
+
+        <h3>1.5 Screen Time / Family Controls data</h3>
+        <p>
+          If you enable the optional "block apps during focus" feature, the App uses Apple's
+          FamilyControls and ManagedSettings frameworks. Your selection of apps and websites
+          to block is stored as opaque tokens in iOS — these tokens are
+          <strong>processed entirely on your device</strong> and never transmitted to us or
+          to Firebase. We cannot see which specific apps or websites you have selected.
+        </p>
+
+        <h3>1.6 Notifications</h3>
+        <p>
+          With your permission, the App schedules local notifications for focus completion and
+          daily reminders (12:00 and 18:00 if you have not focused that day). These notifications
+          are scheduled and delivered entirely on your device by iOS.
+        </p>
+
+        <h3>1.7 What we do <em>not</em> collect</h3>
+        <ul>
+          <li>Your name, email address, phone number, or password (the App has no sign-in screen in v1)</li>
+          <li>Your precise or approximate location</li>
+          <li>Your contacts, photos, microphone, or camera</li>
+          <li>Browsing history outside the App</li>
+          <li>Advertising identifiers (the App does not show ads in v1)</li>
+        </ul>
+
+        <h2>2. How we use data</h2>
+        <ul>
+          <li>To provide core features (timer, pet garden, coins, store)</li>
+          <li>To back up your progress so it can be restored if you reinstall the App on the same device</li>
+          <li>To understand stability and usage trends through Firebase Analytics</li>
+          <li>To process purchases via Apple StoreKit</li>
+        </ul>
+        <p>We do <strong>not</strong> sell your data, share it with advertisers, or use it for advertising profiling.</p>
+
+        <h2>3. Third-party services</h2>
+        <p>The App relies on the following third-party services. Each has its own privacy policy:</p>
+        <ul>
+          <li>
+            <strong>Google Firebase</strong> (Authentication, Firestore, Analytics) —
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+          </li>
+          <li>
+            <strong>Apple</strong> (StoreKit, Family Controls, Notifications) —
+            <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>
+          </li>
+        </ul>
+
+        <h2>4. Data retention</h2>
+        <ul>
+          <li><strong>On-device data</strong> (SwiftData and Keychain) remains until you uninstall the App or clear it manually.</li>
+          <li><strong>Cloud data</strong> (Firebase) is retained indefinitely while your installation is active. You can request deletion at any time (see Section 6).</li>
+          <li><strong>Analytics data</strong> follows Firebase's default retention window (currently 14 months for event-level data).</li>
+        </ul>
+
+        <h2>5. Data location</h2>
+        <p>
+          Cloud data is stored in Google Firebase data centers in the <code>eur3</code>
+          (multi-region Europe) location. By using the App, you consent to your data being
+          processed in those locations.
+        </p>
+
+        <h2>6. Your rights</h2>
+        <p>
+          Depending on where you live (e.g., GDPR in the EU/EEA, KVKK in Türkiye, CCPA in
+          California), you may have the right to:
+        </p>
+        <ul>
+          <li>Access the data we hold about your installation</li>
+          <li>Request correction or deletion of your data</li>
+          <li>Object to or restrict processing</li>
+          <li>Receive a copy of your data in a portable format</li>
+        </ul>
+        <p>
+          Because v1 of the App does not include a login system, we identify your data by the
+          anonymous user ID stored in the App. To exercise any of these rights, email us at
+          <a href="mailto:fatihozen247@gmail.com">fatihozen247@gmail.com</a> from any address
+          and include a screenshot of the Profile screen so we can locate your installation.
+          We will respond within 30 days.
+        </p>
+
+        <h2>7. Children's privacy</h2>
+        <p>
+          The App is rated 4+ but is not designed for, marketed to, or knowingly used by
+          children under 13. We do not knowingly collect personal information from children.
+          If a parent or guardian believes a child has provided us with data, please contact
+          us and we will delete it.
+        </p>
+
+        <h2>8. Security</h2>
+        <p>
+          Cloud data is protected by Firestore security rules that restrict each user's data
+          to their own anonymous user ID. Network traffic uses HTTPS. No system is perfectly
+          secure; we encourage you to keep your device updated.
+        </p>
+
+        <h2>9. Changes to this policy</h2>
+        <p>
+          We may update this policy when the App's data practices change (for example, when
+          social login is added in a future version). The "Last updated" date at the top of
+          this page reflects the most recent revision. Significant changes will be announced
+          in the App's release notes.
+        </p>
+
+        <h2>10. Contact</h2>
+        <p>
+          For privacy questions, requests, or complaints, email
+          <a href="mailto:fatihozen247@gmail.com">fatihozen247@gmail.com</a>.
+        </p>
+      </section>
+
+      <section class="lang-section" data-lang="tr" hidden>
+        <h1>Gizlilik Politikası</h1>
+        <p class="updated">Son güncelleme: <span class="updated-date">6 Mayıs 2026</span></p>
+
+        <p>
+          FocusPet ("Uygulama"), <strong>Fatih Özen</strong> ("Geliştirici", "biz") tarafından
+          geliştirilen, sanal bir hayvan bahçesi ile çalışan iOS odak/pomodoro uygulamasıdır.
+          Bu politika; Uygulamanın hangi verileri topladığını, neden topladığını ve sahip
+          olduğun seçenekleri açıklar. FocusPet'i kullanarak burada anlatılan uygulamaları
+          kabul etmiş olursun.
+        </p>
+
+        <h2>1. Topladığımız veriler</h2>
+
+        <h3>1.1 Hesap ve cihaz tanımlayıcıları</h3>
+        <ul>
+          <li>
+            <strong>Anonim kullanıcı kimliği.</strong> Uygulama ilk açılışta seni Firebase
+            Authentication'a anonim olarak kaydeder. Bu kimlik adın, e-posta adresin veya
+            kontrol ettiğin başka bir tanımlayıcıyla bağlantılı değildir; verilerinin aynı
+            cihazda yedeklenip geri yüklenebilmesi için vardır.
+          </li>
+          <li>
+            <strong>Cihaz tanımlayıcısı.</strong> İlk açılışta üretilen rastgele bir UUID
+            iOS Keychain'de saklanır. Buluttaki verilerinin kurulumunla eşleşmesi için
+            kullanılır.
+          </li>
+        </ul>
+
+        <h3>1.2 Kullanım verileri (buluta yedeklenir)</h3>
+        <p>
+          Aşağıdaki veriler cihazında lokal olarak saklanır ve geri yüklenebilmesi için
+          Firebase Firestore'a aynalanır:
+        </p>
+        <ul>
+          <li>Odak oturumları (başlangıç zamanı, süre, opsiyonel etiket, tamamlandı/iptal durumu)</li>
+          <li>Sahip olduğun hayvanlar ve durumları (tür, çıkış ilerlemesi, bahçedeki konum)</li>
+          <li>Coin bakiyesi ve coin işlem geçmişi</li>
+          <li>Bahçe ilerlemesi (aktif harita, grid boyutu, harita başına sis durumu)</li>
+          <li>Toplam sayaçlar (toplam odak saniyesi, toplam coin, tamamlanmış oturum sayısı, son aktiflik zamanı)</li>
+          <li>Uygulama sürümü ve platform bilgisi ("ios")</li>
+        </ul>
+
+        <h3>1.3 Analitik ve teşhis</h3>
+        <p>
+          Uygulama, Firebase Analytics SDK'sını içerir; bu SDK uygulama açılış olayları,
+          oturum süresi, cihaz modeli, OS sürümü ve Firebase tarafından üretilen bir kurulum
+          kimliği gibi temel kullanım verilerini otomatik olarak toplar. Bu veriler
+          Uygulamanın kararlılığını ve genel kullanım örüntülerini anlamamıza yardımcı olur;
+          tek tek kullanıcıları profillemek için kullanılmaz.
+        </p>
+
+        <h3>1.4 Satın alımlar</h3>
+        <p>
+          Uygulama içi satın alımlar (coin paketleri ve hayvan açma) Apple tarafından StoreKit
+          üzerinden işlenir. Apple bize işlemin onayını iletir, ancak ödeme yöntemini, fatura
+          adresini veya Apple ID'ni bizimle <strong>paylaşmaz</strong>. Satın alım geçmişin
+          Apple'ın gizlilik politikasına tabidir.
+        </p>
+
+        <h3>1.5 Ekran Süresi / FamilyControls verileri</h3>
+        <p>
+          "Odak sırasında uygulamaları engelle" özelliğini etkinleştirirsen Uygulama, Apple'ın
+          FamilyControls ve ManagedSettings çerçevelerini kullanır. Engellemek için seçtiğin
+          uygulamalar ve siteler iOS tarafında opak token'lar olarak saklanır; bu token'lar
+          <strong>tamamen cihazında işlenir</strong> ve bize ya da Firebase'e asla
+          gönderilmez. Hangi uygulamayı veya siteyi seçtiğini biz göremeyiz.
+        </p>
+
+        <h3>1.6 Bildirimler</h3>
+        <p>
+          İzin verirsen Uygulama, odak tamamlanma bildirimleri ve günlük hatırlatmalar (o gün
+          odaklanmadıysan 12:00 ve 18:00) için lokal bildirimler planlar. Bu bildirimler
+          tamamen iOS tarafından cihazında planlanır ve teslim edilir.
+        </p>
+
+        <h3>1.7 Toplamadığımız şeyler</h3>
+        <ul>
+          <li>Adın, e-posta adresin, telefon numaran veya parolan (v1'de Uygulamada giriş ekranı yoktur)</li>
+          <li>Konumun (kesin veya yaklaşık)</li>
+          <li>Rehberin, fotoğrafların, mikrofonun veya kameran</li>
+          <li>Uygulama dışındaki tarama geçmişin</li>
+          <li>Reklam tanımlayıcıları (v1'de Uygulama reklam göstermez)</li>
+        </ul>
+
+        <h2>2. Verileri nasıl kullanırız</h2>
+        <ul>
+          <li>Temel özellikleri sunmak için (timer, hayvan bahçesi, coin, mağaza)</li>
+          <li>Aynı cihaza yeniden yüklediğinde ilerlemeni geri yükleyebilmek için</li>
+          <li>Firebase Analytics ile kararlılık ve kullanım eğilimlerini anlamak için</li>
+          <li>Apple StoreKit üzerinden satın alımları işlemek için</li>
+        </ul>
+        <p>
+          Verilerini <strong>satmayız</strong>, reklamcılarla paylaşmayız ve reklam profillemesi
+          için kullanmayız.
+        </p>
+
+        <h2>3. Üçüncü taraf hizmetleri</h2>
+        <p>
+          Uygulama aşağıdaki üçüncü taraf hizmetlerine dayanır. Her birinin kendi gizlilik
+          politikası vardır:
+        </p>
+        <ul>
+          <li>
+            <strong>Google Firebase</strong> (Authentication, Firestore, Analytics) —
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+          </li>
+          <li>
+            <strong>Apple</strong> (StoreKit, Family Controls, bildirimler) —
+            <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>
+          </li>
+        </ul>
+
+        <h2>4. Veri saklama</h2>
+        <ul>
+          <li>
+            <strong>Cihazdaki veriler</strong> (SwiftData ve Keychain) Uygulamayı silene veya
+            manuel temizleyene kadar kalır.
+          </li>
+          <li>
+            <strong>Bulut verileri</strong> (Firebase) kurulumun aktif olduğu sürece süresiz
+            saklanır. İstediğin zaman silinmesini talep edebilirsin (Bölüm 6).
+          </li>
+          <li>
+            <strong>Analitik verileri</strong> Firebase'in varsayılan saklama süresine tabidir
+            (şu anda olay bazlı veriler için 14 ay).
+          </li>
+        </ul>
+
+        <h2>5. Veri konumu</h2>
+        <p>
+          Bulut verileri Google Firebase'in <code>eur3</code> (Avrupa çoklu bölge) konumundaki
+          veri merkezlerinde saklanır. Uygulamayı kullanarak verilerinin bu konumlarda
+          işlenmesine onay vermiş olursun.
+        </p>
+
+        <h2>6. Haklarınız</h2>
+        <p>
+          Yaşadığın yere bağlı olarak (örn. AB/EEA'da GDPR, Türkiye'de KVKK, Kaliforniya'da
+          CCPA) şu haklara sahip olabilirsin:
+        </p>
+        <ul>
+          <li>Kurulumun hakkında tuttuğumuz verilere erişim</li>
+          <li>Verinin düzeltilmesini veya silinmesini talep etme</li>
+          <li>İşlemeye itiraz etme veya kısıtlama</li>
+          <li>Verinin taşınabilir bir formatta kopyasını alma</li>
+        </ul>
+        <p>
+          Uygulamanın v1'inde giriş sistemi olmadığı için verini Uygulamada tutulan anonim
+          kullanıcı kimliğiyle tanımlarız. Bu haklardan herhangi birini kullanmak için
+          <a href="mailto:fatihozen247@gmail.com">fatihozen247@gmail.com</a> adresine herhangi
+          bir e-posta adresinden yaz; kurulumunu bulabilmemiz için Profil ekranının ekran
+          görüntüsünü ekle. 30 gün içinde dönüş yaparız.
+        </p>
+
+        <h2>7. Çocukların gizliliği</h2>
+        <p>
+          Uygulama 4+ olarak derecelendirilmiştir, ancak 13 yaş altı çocuklar için
+          tasarlanmamıştır, onlara pazarlanmaz ve bilerek kullanılmasına yönelik değildir.
+          Çocuklardan bilerek kişisel veri toplamayız. Bir ebeveyn veya vasi, bir çocuğun
+          bize veri sağladığını düşünüyorsa lütfen bizimle iletişime geçsin; sileriz.
+        </p>
+
+        <h2>8. Güvenlik</h2>
+        <p>
+          Bulut verileri, her kullanıcının verisini kendi anonim kullanıcı kimliğiyle
+          sınırlayan Firestore güvenlik kurallarıyla korunur. Ağ trafiği HTTPS kullanır.
+          Hiçbir sistem mükemmel güvenli değildir; cihazını güncel tutmanı öneririz.
+        </p>
+
+        <h2>9. Politikadaki değişiklikler</h2>
+        <p>
+          Uygulamanın veri uygulamaları değiştiğinde (örneğin gelecekteki bir sürümde sosyal
+          giriş eklendiğinde) bu politikayı güncelleyebiliriz. Sayfanın üstündeki "Son
+          güncelleme" tarihi en son revizyonu yansıtır. Önemli değişiklikler Uygulamanın
+          sürüm notlarında duyurulur.
+        </p>
+
+        <h2>10. İletişim</h2>
+        <p>
+          Gizlilikle ilgili soru, talep veya şikayetler için
+          <a href="mailto:fatihozen247@gmail.com">fatihozen247@gmail.com</a> adresine yaz.
+        </p>
+      </section>
+    </article>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Fatih Özen — <a href="index.html">FocusPet</a></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const buttons = document.querySelectorAll('.lang-toggle button');
+    const sections = document.querySelectorAll('.lang-section');
+    const browserLang = (navigator.language || 'en').toLowerCase().startsWith('tr') ? 'tr' : 'en';
+    const initial = localStorage.getItem('focuspet.lang') || browserLang;
+
+    function setLang(lang) {
+      buttons.forEach(b => {
+        const active = b.dataset.lang === lang;
+        b.classList.toggle('active', active);
+        b.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      sections.forEach(s => { s.hidden = s.dataset.lang !== lang; });
+      document.documentElement.lang = lang;
+      localStorage.setItem('focuspet.lang', lang);
+    }
+
+    buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+    setLang(initial);
+  </script>
+</body>
+</html>

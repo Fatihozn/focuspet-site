@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FocusPet</title>
+  <meta name="description" content="FocusPet — a focus timer that grows a pet garden while you work." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>FocusPet</h1>
+      <p class="tagline">Focus. Earn coins. Grow a pet garden.</p>
+      <p class="tagline-tr">Odaklan. Coin kazan. Hayvan bahçeni büyüt.</p>
+    </header>
+
+    <section class="links">
+      <a class="link-card" href="privacy.html">
+        <span class="link-title">Privacy Policy</span>
+        <span class="link-sub">Gizlilik Politikası</span>
+      </a>
+      <a class="link-card" href="support.html">
+        <span class="link-title">Support</span>
+        <span class="link-sub">Destek</span>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Fatih Özen</p>
+    </footer>
+  </main>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
