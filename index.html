@@ -3,37 +3,240 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FocusPet</title>
-  <meta name="description" content="FocusPet — a focus timer that grows a pet garden while you work." />
+  <title>FocusPet — Focus timer with a pet garden</title>
+  <meta name="description" content="FocusPet — a Pomodoro focus timer that hatches pets and grows an isometric garden while you work or study." />
+  <meta property="og:title" content="FocusPet — Focus timer with a pet garden" />
+  <meta property="og:description" content="Turn your focus time into a cozy pet garden. iPhone & iPad, iOS 26+." />
+  <meta property="og:image" content="images/icon.png" />
+  <meta name="theme-color" content="#0d1c12" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page">
-    <header class="hero">
-      <h1>FocusPet</h1>
-      <p class="tagline">Focus. Earn coins. Grow a pet garden.</p>
-      <p class="tagline-tr">Odaklan. Coin kazan. Hayvan bahçeni büyüt.</p>
-    </header>
+  <main class="page landing">
+    <nav class="topnav">
+      <a class="brand" href="index.html">FocusPet</a>
+      <div class="lang-toggle" role="tablist" aria-label="Language">
+        <button type="button" class="active" data-lang="en" aria-selected="true">EN</button>
+        <button type="button" data-lang="tr" aria-selected="false">TR</button>
+      </div>
+    </nav>
 
-    <section class="links">
-      <a class="link-card" href="privacy.html">
-        <span class="link-title">Privacy Policy</span>
-        <span class="link-sub">Gizlilik Politikası</span>
-      </a>
-      <a class="link-card" href="terms.html">
-        <span class="link-title">Terms of Use</span>
-        <span class="link-sub">Kullanım Koşulları</span>
-      </a>
-      <a class="link-card" href="support.html">
-        <span class="link-title">Support</span>
-        <span class="link-sub">Destek</span>
-      </a>
+    <section class="lang-section" data-lang="en">
+      <header class="hero">
+        <img src="images/icon.png" class="app-icon" alt="FocusPet app icon" width="140" height="140" />
+        <h1>FocusPet</h1>
+        <p class="hero-tagline">Turn your focus time into a cozy pet garden.</p>
+        <p class="hero-sub">
+          Pomodoro sessions hatch eggs into adorable pets. Arrange them across themed
+          isometric maps as you build a focus habit — block distractions, earn coins,
+          and grow a roster that's anything but ordinary.
+        </p>
+        <div class="cta-row">
+          <span class="cta-pill" aria-label="Coming soon to the App Store">
+            <svg class="cta-glyph" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M17.05 13.34c-.02-2.05 1.68-3.04 1.76-3.08-.96-1.4-2.45-1.6-2.98-1.62-1.27-.13-2.48.74-3.13.74-.66 0-1.65-.73-2.71-.71-1.39.02-2.69.81-3.41 2.06-1.45 2.52-.37 6.24 1.04 8.29.69 1 1.51 2.13 2.58 2.09 1.04-.04 1.43-.67 2.69-.67 1.25 0 1.6.67 2.71.65 1.12-.02 1.83-1.02 2.51-2.03.79-1.17 1.12-2.3 1.14-2.36-.03-.01-2.18-.84-2.2-3.36zM15.07 7.39c.57-.71.96-1.69.85-2.67-.83.04-1.84.56-2.43 1.26-.53.62-1 1.62-.87 2.58.93.07 1.88-.47 2.45-1.17z"/>
+            </svg>
+            <span class="cta-text">
+              <span class="cta-eyebrow">Coming soon to the</span>
+              <span class="cta-store">App Store</span>
+            </span>
+          </span>
+          <span class="cta-meta">iPhone &amp; iPad · iOS 26+</span>
+        </div>
+      </header>
+
+      <section class="block">
+        <h2 class="section-title">Why FocusPet?</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🎯</span>
+            <h3>Focused Pomodoro</h3>
+            <p>25, 45 or 90-minute sessions. Optional tags. Background timer with a Live Activity on the lock screen and Dynamic Island.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🥚</span>
+            <h3>Hatching pets</h3>
+            <p>Every focused minute fills a queued egg. From common foxes to mythic moon cats — a growing roster of species.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🛡️</span>
+            <h3>Block distractions</h3>
+            <p>Pick apps to lock during a focus session. Built on Apple's Screen Time API — auto-unlocks when the session ends.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🌍</span>
+            <h3>Themed maps</h3>
+            <p>Start in the main garden. Unlock Forest, Beach, Mountain, Volcano and Sky — each with its own ornamental style.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🪙</span>
+            <h3>Coin economy</h3>
+            <p>Earn coins from every completed session. Spend them on new pets, garden expansions, or to clear the fog on fresh maps.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">📊</span>
+            <h3>Stats that motivate</h3>
+            <p>Weekly focus chart, tag breakdown, total focus time, completed sessions and your full collection — all in one place.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="section-title">How it works</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <strong>Pick a pet</strong>
+              <p>Buy a starter, coin or premium pet from the Shop. Add an egg to your focus queue.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <strong>Focus</strong>
+              <p>Start a 25–90 minute session. Lock your phone, leave the app — the timer keeps running in the background.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <strong>Grow your garden</strong>
+              <p>A completed focus hatches your egg and earns coins. Place the new pet on your isometric map and keep going.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="block closing">
+        <p class="closing-line">Start your first focus, hatch your first egg — your garden is waiting.</p>
+      </section>
     </section>
 
-    <footer class="footer">
+    <section class="lang-section" data-lang="tr" hidden>
+      <header class="hero">
+        <img src="images/icon.png" class="app-icon" alt="FocusPet uygulama ikonu" width="140" height="140" />
+        <h1>FocusPet</h1>
+        <p class="hero-tagline">Odak süreni sevimli bir hayvan bahçesine dönüştür.</p>
+        <p class="hero-sub">
+          Pomodoro seansların yumurtaları sevimli hayvanlara dönüştürür. Onları temalı izometrik
+          haritalarda yerleştirirken bir odak alışkanlığı kurarsın — dikkat dağıtıcıları engelle,
+          coin kazan, sıradanın çok ötesinde bir koleksiyon büyüt.
+        </p>
+        <div class="cta-row">
+          <span class="cta-pill" aria-label="App Store'da yakında">
+            <svg class="cta-glyph" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M17.05 13.34c-.02-2.05 1.68-3.04 1.76-3.08-.96-1.4-2.45-1.6-2.98-1.62-1.27-.13-2.48.74-3.13.74-.66 0-1.65-.73-2.71-.71-1.39.02-2.69.81-3.41 2.06-1.45 2.52-.37 6.24 1.04 8.29.69 1 1.51 2.13 2.58 2.09 1.04-.04 1.43-.67 2.69-.67 1.25 0 1.6.67 2.71.65 1.12-.02 1.83-1.02 2.51-2.03.79-1.17 1.12-2.3 1.14-2.36-.03-.01-2.18-.84-2.2-3.36zM15.07 7.39c.57-.71.96-1.69.85-2.67-.83.04-1.84.56-2.43 1.26-.53.62-1 1.62-.87 2.58.93.07 1.88-.47 2.45-1.17z"/>
+            </svg>
+            <span class="cta-text">
+              <span class="cta-eyebrow">Yakında</span>
+              <span class="cta-store">App Store</span>
+            </span>
+          </span>
+          <span class="cta-meta">iPhone &amp; iPad · iOS 26+</span>
+        </div>
+      </header>
+
+      <section class="block">
+        <h2 class="section-title">Neden FocusPet?</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🎯</span>
+            <h3>Odaklanmış Pomodoro</h3>
+            <p>25, 45 veya 90 dakikalık seanslar. İsteğe bağlı etiketler. Kilit ekranı ve Dinamik Ada'da Live Activity ile arka plan zamanlayıcısı.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🥚</span>
+            <h3>Açılan yumurtalar</h3>
+            <p>Her odak dakikası sıradaki yumurtaya birikir. Common tilkilerden Mythic ay kedilerine — sürekli büyüyen bir tür kataloğu.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🛡️</span>
+            <h3>Dikkat dağıtıcı engelleme</h3>
+            <p>Odak seansı sırasında kilitlenecek uygulamaları seç. Apple'ın Screen Time API'si üzerinde; seans bittiğinde otomatik açılır.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🌍</span>
+            <h3>Temalı haritalar</h3>
+            <p>Ana bahçeyle başla. Orman, Kumsal, Dağ, Volkan ve Gökyüzü'nü sırayla aç — her birinin kendi süslemesi var.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🪙</span>
+            <h3>Coin ekonomisi</h3>
+            <p>Her tamamlanan seanstan coin kazan. Coinleri yeni hayvanlar, bahçe genişletmesi veya yeni haritaların sisini dağıtmak için harca.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">📊</span>
+            <h3>Motive eden istatistik</h3>
+            <p>Haftalık odak grafiği, etiket dağılımı, toplam odak süresi, tamamlanan seanslar ve tüm koleksiyonun — hepsi tek yerde.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="section-title">Nasıl çalışır?</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <strong>Bir hayvan seç</strong>
+              <p>Mağaza'dan starter, coin veya premium hayvan al. Odak sırasına bir yumurta ekle.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <strong>Odaklan</strong>
+              <p>25–90 dakikalık bir seans başlat. Telefonu kilitleyebilir, uygulamadan çıkabilirsin — süre arka planda işlemeye devam eder.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <strong>Bahçeni büyüt</strong>
+              <p>Tamamlanan odak yumurtanı açar ve coin kazandırır. Yeni hayvanı izometrik haritana yerleştir, devam et.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="block closing">
+        <p class="closing-line">İlk odağına başla, ilk yumurtanı aç — küçük bir bahçe seni bekliyor.</p>
+      </section>
+    </section>
+
+    <footer class="footer landing-footer">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy / Gizlilik</a>
+        <a href="terms.html">Terms / Koşullar</a>
+        <a href="support.html">Support / Destek</a>
+      </div>
       <p>© <span id="year"></span> Fatih Özen</p>
     </footer>
   </main>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const buttons = document.querySelectorAll('.lang-toggle button');
+    const sections = document.querySelectorAll('.lang-section');
+    const browserLang = (navigator.language || 'en').toLowerCase().startsWith('tr') ? 'tr' : 'en';
+    const initial = localStorage.getItem('focuspet.lang') || browserLang;
+
+    function setLang(lang) {
+      buttons.forEach(b => {
+        const active = b.dataset.lang === lang;
+        b.classList.toggle('active', active);
+        b.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      sections.forEach(s => { s.hidden = s.dataset.lang !== lang; });
+      document.documentElement.lang = lang;
+      localStorage.setItem('focuspet.lang', lang);
+    }
+
+    buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+    setLang(initial);
+  </script>
 </body>
 </html>
